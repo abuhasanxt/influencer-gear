@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header-section */
+header {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  list-style: none;
+}
+.nav-item li {
+  margin-right: 34px;
+  text-wrap: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.heading {
+  text-wrap: nowrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-contain {
+  max-width: 582px;
+}
+.main-camera {
+  max-width: 440px;
+}
+
+.main-camera img {
+  width: 100%;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3a3a3a;
+  line-height: 55px;
+}
+.header-pera {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header-btn {
+  background-color: #e02c6d;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+/* main-section */
+main {
+  max-width: 1047px;
+  margin: 0 auto;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.card-contain {
+  line-height: 0px;
+  padding: 20px 10px;
+  max-width: 329px;
+  margin-bottom: 25px;
+}
+.main-heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+.card-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.dolor {
+  font-size: 1.5rem;
+  color: #000000;
+}
+.icon {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fb8200;
+}
+span {
+  color: #5e6366;
+}
+.card-pera {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #787885;
+  text-wrap: wrap;
+  line-height: 20px;
+}
+.popular-btn {
+  color: #e02c6d;
+  border: none;
+  margin-left: 70%;
+  margin-top: -20px;
+  text-wrap: nowrap;
+}
+/* feature-section */
+.feature {
+  max-width: 1110px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-contain {
+  max-width: 610px;
+}
+.feature-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a0826;
+}
+.feature-pera {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+.join-btn {
+  background-color: #e02c6d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+/* footer-section */
+footer {
+  background-color: #0a0826;
+  line-height: 0;
+  padding: 20px;
+  text-align: center;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.footer-sub {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .navber {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .header-container,
+  .feature {
+    flex-direction: column-reverse;
+  }
+  .header-contain {
+    text-align: center;
+  }
+  .icon-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .hr {
+    display: none;
+  }
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature {
+    text-align: center;
+  }
+  .feature-contain {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+  .nav-item li {
+    margin-right: 15px;
+  }
+  .icon-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-contain {
+    padding: 20px 0;
+  }
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .feature-contain {
+    margin-bottom: 20px;
+  }
+}
