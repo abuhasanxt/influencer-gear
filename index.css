@@ -88,13 +88,15 @@ main {
 .card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 25px;
 }
 .card-contain {
   line-height: 0px;
   padding: 20px 10px;
-  max-width: 329px;
   margin-bottom: 25px;
+}
+.card-contain img {
+  width: 100%;
 }
 .main-heading {
   font-size: 1.9rem;
