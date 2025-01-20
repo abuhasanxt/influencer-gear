@@ -93,7 +93,10 @@ main {
 .card-contain {
   line-height: 0px;
   padding: 20px 10px;
-  margin-bottom: 25px;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0 6px 6px gray;
+  margin-bottom: 5px;
 }
 .card-contain img {
   width: 100%;
@@ -130,7 +133,6 @@ span {
   color: #e02c6d;
   border: none;
   margin-left: 70%;
-  margin-top: -20px;
   text-wrap: nowrap;
 }
 /* feature-section */
